@@ -1,0 +1,12 @@
+.voiced-film .film-call{display:none}.voiced-film .film-stage .film-base{animation:none;opacity:0}.voiced-film .film-stage .film-awakened{animation:none;opacity:.2;filter:blur(12px)}
+.voiced-film .film-stage .film-body{right:2%;bottom:9%;height:82%;width:49%;opacity:1;animation:voice-reveal 1.4s ease-out both}
+.voiced-film .film-vignette{background:linear-gradient(90deg,#02040bf5 5%,#02040bd9 40%,#02040b20 80%)}
+.voice-dialogue{position:absolute;z-index:6;left:7%;top:14%;bottom:13%;width:46%;overflow:auto;padding-right:15px;scrollbar-width:thin;color:#f6f1e8;text-shadow:0 2px 8px #000}
+.voice-dialogue .voice-name{letter-spacing:.22em;text-transform:uppercase;color:var(--awakening-color);font-size:clamp(11px,1.2vw,17px)}
+.voice-dialogue h2{font:clamp(24px,3.2vw,52px)/1.12 Georgia,serif;margin:12px 0 24px;color:#fff2d7}
+.voice-dialogue>div>p{font-size:clamp(13px,1.4vw,21px);line-height:1.5;margin:14px 0}.voice-dialogue small{display:block;font-size:.6em;letter-spacing:.18em;text-transform:uppercase;color:var(--awakening-color);margin-bottom:3px}
+@keyframes voice-reveal{from{opacity:0;transform:translateX(5%) scale(.97);filter:brightness(2)}to{opacity:1;transform:none;filter:none}}
+.voiced-film.film-still .film-body{animation:none}
+@media(max-width:650px){.voice-dialogue{left:5%;top:12%;bottom:14%;width:66%;padding-right:8px}.voice-dialogue h2{font-size:24px;margin:10px 0 16px}.voice-dialogue>div>p{font-size:13px;margin:12px 0}.voiced-film .film-stage .film-body{right:-15%;width:68%;height:65%;bottom:9%;opacity:.65}.voiced-film .film-vignette{background:linear-gradient(90deg,#02040bf2,#02040bb0 60%,#02040b20)}}
+@media(prefers-reduced-motion:reduce){.voiced-film .film-stage .film-body{animation:none!important;opacity:1;transform:none}}
+.voiced-film .film-letterbox{height:9dvh;animation:none}

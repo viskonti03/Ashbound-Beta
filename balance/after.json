@@ -1,0 +1,107 @@
+{
+  "seed": 13032026,
+  "games": 120,
+  "arenas": [
+    "living-world",
+    "soul-society",
+    "las-noches"
+  ],
+  "draws": 0,
+  "capped": 0,
+  "meanRounds": 9.73,
+  "meanActions": 37.66,
+  "freeSwitches": 196,
+  "method": "60 seeded roster pairs, both seat orders; existing practice AI on both teams. Exploratory smoke test, not human win-rate evidence.",
+  "roster": {
+    "dan": {
+      "games": 78,
+      "wins": 42,
+      "bankai": 57,
+      "eyes5": 0,
+      "damage": 14721,
+      "winRate": 53.8,
+      "meanDamage": 189
+    },
+    "afrodi": {
+      "games": 68,
+      "wins": 39,
+      "bankai": 22,
+      "eyes5": 0,
+      "damage": 5470,
+      "winRate": 57.4,
+      "meanDamage": 80
+    },
+    "blade": {
+      "games": 80,
+      "wins": 41,
+      "bankai": 51,
+      "eyes5": 0,
+      "damage": 11499,
+      "winRate": 51.3,
+      "meanDamage": 144
+    },
+    "drake": {
+      "games": 48,
+      "wins": 31,
+      "bankai": 23,
+      "eyes5": 0,
+      "damage": 10383,
+      "winRate": 64.6,
+      "meanDamage": 216
+    },
+    "gin": {
+      "games": 76,
+      "wins": 39,
+      "bankai": 72,
+      "eyes5": 0,
+      "damage": 17437,
+      "winRate": 51.3,
+      "meanDamage": 229
+    },
+    "hanibal": {
+      "games": 78,
+      "wins": 37,
+      "bankai": 0,
+      "eyes5": 78,
+      "damage": 20870,
+      "winRate": 47.4,
+      "meanDamage": 268
+    },
+    "kami": {
+      "games": 64,
+      "wins": 18,
+      "bankai": 59,
+      "eyes5": 0,
+      "damage": 14218,
+      "winRate": 28.1,
+      "meanDamage": 222
+    },
+    "kidou": {
+      "games": 78,
+      "wins": 33,
+      "bankai": 19,
+      "eyes5": 8,
+      "damage": 7291,
+      "winRate": 42.3,
+      "meanDamage": 93
+    },
+    "lane": {
+      "games": 76,
+      "wins": 36,
+      "bankai": 74,
+      "eyes5": 0,
+      "damage": 16435,
+      "winRate": 47.4,
+      "meanDamage": 216
+    },
+    "tomamaru": {
+      "games": 74,
+      "wins": 44,
+      "bankai": 39,
+      "eyes5": 0,
+      "damage": 9748,
+      "winRate": 59.5,
+      "meanDamage": 132
+    }
+  }
+}

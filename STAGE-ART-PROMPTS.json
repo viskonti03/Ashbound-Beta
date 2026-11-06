@@ -1,0 +1,20 @@
+{
+  "mode": "built-in image generation",
+  "arena": "Empty cinematic ruined Japanese temple courtyard beneath crimson eclipse, red maples, wet reflective stone, no characters or interface. Reference: supplied battle composition.",
+  "fighters": {
+    "tomamaru": "Extract supplied full-body design onto transparent background, preserving identity, costume and sword; remove environment and broad aura.",
+    "blade": "Extract supplied hooded swordsman onto transparent background, preserving identity, costume and sword; remove environment and broad aura.",
+    "gin": "Extract supplied silver-haired swordsman onto transparent background, preserving identity, costume and sword; remove environment and broad aura.",
+    "hanibal": "Extract supplied long-haired swordsman onto transparent background, preserving identity, costume and sword; remove environment and broad aura."
+  },
+  "rosterPrompt": "Create a single full-body game character sprite for {id}, based faithfully on the attached character portrait. Match face hair age facial hair outfit and colors exactly. Extend to a complete standing warrior with detailed flowing robes (or full samurai armor for Tourgen), sword in relaxed combat-ready stance, entire head to sandals visible, three-quarter front view. Premium detailed anime illustration matching realistic painted fabric. Small margins, tall portrait composition. TRUE TRANSPARENT BACKGROUND. No floor sky scenery text frame or ground shadow. Shikai base form, restrained power, NO large glowing aura. Keep silhouette clean for placing in a battlefield.",
+  "roster": [
+    "dan",
+    "afrodi",
+    "drake",
+    "kami",
+    "kidou",
+    "lane",
+    "tourgen"
+  ]
+}

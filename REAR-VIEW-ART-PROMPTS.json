@@ -1,0 +1,61 @@
+{
+  "prompt": "Rear view of the exact front-view fighter; back of head and clothing visible, facing upper right about 15 degrees; no visible face. Full body to both feet. Preserve hair, outfit colors, layers, embroidery, hood or armor and weapon. Battle-ready standing pose, cloth blown left, detailed anime illustration, cool rim light. Transparent background without environment, floor, shadow, UI or large aura. Base outfit.",
+  "reference": "Existing front fighter and user-supplied battlefield camera reference",
+  "assets": [
+    {
+      "character": "gin",
+      "front": "public/fighters/gin.png",
+      "rear": "public/fighters/back/gin.png"
+    },
+    {
+      "character": "afrodi",
+      "front": "public/fighters/afrodi.png",
+      "rear": "public/fighters/back/afrodi.png"
+    },
+    {
+      "character": "kami",
+      "front": "public/fighters/kami.png",
+      "rear": "public/fighters/back/kami.png"
+    },
+    {
+      "character": "dan",
+      "front": "public/fighters/dan.png",
+      "rear": "public/fighters/back/dan.png"
+    },
+    {
+      "character": "blade",
+      "front": "public/fighters/blade.png",
+      "rear": "public/fighters/back/blade.png"
+    },
+    {
+      "character": "drake",
+      "front": "public/fighters/drake.png",
+      "rear": "public/fighters/back/drake.png"
+    },
+    {
+      "character": "hanibal",
+      "front": "public/fighters/hanibal.png",
+      "rear": "public/fighters/back/hanibal.png"
+    },
+    {
+      "character": "kidou",
+      "front": "public/fighters/kidou.png",
+      "rear": "public/fighters/back/kidou.png"
+    },
+    {
+      "character": "lane",
+      "front": "public/fighters/lane.png",
+      "rear": "public/fighters/back/lane.png"
+    },
+    {
+      "character": "tomamaru",
+      "front": "public/fighters/tomamaru.png",
+      "rear": "public/fighters/back/tomamaru.png"
+    },
+    {
+      "character": "tourgen",
+      "front": "public/fighters/tourgen.png",
+      "rear": "public/fighters/back/tourgen.png"
+    }
+  ]
+}

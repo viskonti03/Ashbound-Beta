@@ -1,0 +1,86 @@
+[
+  {
+    "id": "soul-society",
+    "type": "arena",
+    "prompt": "Use case: stylized-concept. Asset type: wide landscape arena background for an anime tactical card game. Soul Society, Seireitei from Bleach: vast white-walled Japanese spirit city, layered dark tiled roofs, monumental white towers, distant wooded mountains, sunlit sky with drifting clouds, dramatic perspective from a broad empty stone courtyard. High-detail cinematic anime environment painting, atmospheric depth, tactile stone and architecture, rich lighting. Wide 16:9 composition, clear recognizable landmark in center, no people, no fighting characters, no text, no logos, no watermark, no UI. A finished illustrated environment, not a diagram.",
+    "asset": "public/arenas/soul-society.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "las-noches",
+    "type": "arena",
+    "prompt": "Use case: stylized-concept. Asset type: wide landscape arena background for an anime tactical card game. Las Noches from Bleach: colossal white domed fortress and slender white towers, endless pale desert dunes and black dead trees, black night sky with a thin crescent moon, lonely immense scale, foreground empty white sand. High-detail cinematic anime environment painting, atmospheric depth, tactile stone and architecture, rich lighting. Wide 16:9 composition, clear recognizable landmark in center, no people, no fighting characters, no text, no logos, no watermark, no UI. A finished illustrated environment, not a diagram.",
+    "asset": "public/arenas/las-noches.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "living-world",
+    "type": "arena",
+    "prompt": "Use case: stylized-concept. Asset type: wide landscape arena background for an anime tactical card game. World of the Living, a modern Japanese town beside a river at blue hour: bridge, utility poles, apartment blocks, distant city lights, wet empty riverbank walkway, warm window lights and deep blue sunset sky. High-detail cinematic anime environment painting, atmospheric depth, tactile stone and architecture, rich lighting. Wide 16:9 composition, clear recognizable landmark in center, no people, no fighting characters, no text, no logos, no watermark, no UI. A finished illustrated environment, not a diagram.",
+    "asset": "public/arenas/living-world.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "dan",
+    "type": "bankai",
+    "prompt": "Use case: identity-preserve. Asset type: square Bankai transformation portrait for Ashbound anime tactical card game. Input image is the base-form portrait of dan, edit target and identity reference. Create his clearly evolved Bankai form: Hell Shogun: transform his robes into imposing black and aged-gold samurai armor, bare bald head and white beard clearly visible, black fire edged in orange behind him, stern command. Preserve the exact character identity, facial structure, age, hair color, ethnicity and recognizable facial features from the reference. Do not substitute a different person. High-quality hand-painted anime illustration, precise ink linework, chest-up centered framing, face fully readable in upper center. Distinct transformation rather than simply recoloring the base portrait. One character, square composition, no text, no logo, no border, no watermark.",
+    "asset": "public/portraits/bankai/dan.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "afrodi",
+    "type": "bankai",
+    "prompt": "Use case: identity-preserve. Asset type: square Bankai transformation portrait for Ashbound anime tactical card game. Input image is the base-form portrait of afrodi, edit target and identity reference. Create his clearly evolved Bankai form: Procession of the Damned: flowing ivory and black ceremonial soul robes, translucent edges suggesting phasing, eerie violet hell gate behind him, shadowy worshipper silhouettes kneeling far in the background, long white hair remains. Preserve the exact character identity, facial structure, age, hair color, ethnicity and recognizable facial features from the reference. Do not substitute a different person. High-quality hand-painted anime illustration, precise ink linework, chest-up centered framing, face fully readable in upper center. Distinct transformation rather than simply recoloring the base portrait. One character, square composition, no text, no logo, no border, no watermark.",
+    "asset": "public/portraits/bankai/afrodi.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "blade",
+    "type": "bankai",
+    "prompt": "Use case: identity-preserve. Asset type: square Bankai transformation portrait for Ashbound anime tactical card game. Input image is the base-form portrait of blade, edit target and identity reference. Create his clearly evolved Bankai form: Sovereign's Captive World: retain white hood, black face shadow and ornate gold forearm armor, elevate the mantle with luminous cyan seams, a fractured circular portal and floating world fragments behind him, sword edge cutting space. Preserve the exact character identity, facial structure, age, hair color, ethnicity and recognizable facial features from the reference. Do not substitute a different person. High-quality hand-painted anime illustration, precise ink linework, chest-up centered framing, face fully readable in upper center. Distinct transformation rather than simply recoloring the base portrait. One character, square composition, no text, no logo, no border, no watermark.",
+    "asset": "public/portraits/bankai/blade.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "drake",
+    "type": "bankai",
+    "prompt": "Use case: identity-preserve. Asset type: square Bankai transformation portrait for Ashbound anime tactical card game. Input image is the base-form portrait of drake, edit target and identity reference. Create his clearly evolved Bankai form: Mantle of Annihilation: keep purple hair and goatee, body and clothing coated in intense violet destruction energy with luminous crack-like seams, dark black-purple fitted battle robes, disintegrating stone floating at edges, powerful controlled menace. Preserve the exact character identity, facial structure, age, hair color, ethnicity and recognizable facial features from the reference. Do not substitute a different person. High-quality hand-painted anime illustration, precise ink linework, chest-up centered framing, face fully readable in upper center. Distinct transformation rather than simply recoloring the base portrait. One character, square composition, no text, no logo, no border, no watermark.",
+    "asset": "public/portraits/bankai/drake.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "gin",
+    "type": "bankai",
+    "prompt": "Use case: identity-preserve. Asset type: square Bankai transformation portrait for Ashbound anime tactical card game. Input image is the base-form portrait of gin, edit target and identity reference. Create his clearly evolved Bankai form: Boundless Ascension: keep elderly face, spiky silver hair, stubble and stern expression, flowing white captain robes lifted by immense teal spiritual pressure, luminous teal cracks across forearms and cheeks, concentric absorption rings behind him. Preserve the exact character identity, facial structure, age, hair color, ethnicity and recognizable facial features from the reference. Do not substitute a different person. High-quality hand-painted anime illustration, precise ink linework, chest-up centered framing, face fully readable in upper center. Distinct transformation rather than simply recoloring the base portrait. One character, square composition, no text, no logo, no border, no watermark.",
+    "asset": "public/portraits/bankai/gin.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "kami",
+    "type": "bankai",
+    "prompt": "Use case: identity-preserve. Asset type: square Bankai transformation portrait for Ashbound anime tactical card game. Input image is the base-form portrait of kami, edit target and identity reference. Create his clearly evolved Bankai form: The Last Witness: keep young blond face and hairstyle, sleek white-black high collar battle robes with amber piping, silhouette partly dissolves into invisibility at the edges, one raised hand aiming a small luminous erasure projectile, dark void ring behind the hand, no gun. Preserve the exact character identity, facial structure, age, hair color, ethnicity and recognizable facial features from the reference. Do not substitute a different person. High-quality hand-painted anime illustration, precise ink linework, chest-up centered framing, face fully readable in upper center. Distinct transformation rather than simply recoloring the base portrait. One character, square composition, no text, no logo, no border, no watermark.",
+    "asset": "public/portraits/bankai/kami.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "kidou",
+    "type": "bankai",
+    "prompt": "Use case: identity-preserve. Asset type: square Bankai transformation portrait for Ashbound anime tactical card game. Input image is the base-form portrait of kidou, edit target and identity reference. Create his clearly evolved Bankai form: Infinite Echoes: preserve tied brown hair with braids, facial hair and scar, elaborate flowing ivory-black captain mantle with gold bands, a halo of ghostly diverse sword silhouettes behind him, luminous white dimensional slash at lower edge. Preserve the exact character identity, facial structure, age, hair color, ethnicity and recognizable facial features from the reference. Do not substitute a different person. High-quality hand-painted anime illustration, precise ink linework, chest-up centered framing, face fully readable in upper center. Distinct transformation rather than simply recoloring the base portrait. One character, square composition, no text, no logo, no border, no watermark.",
+    "asset": "public/portraits/bankai/kidou.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "lane",
+    "type": "bankai",
+    "prompt": "Use case: identity-preserve. Asset type: square Bankai transformation portrait for Ashbound anime tactical card game. Input image is the base-form portrait of lane, edit target and identity reference. Create his clearly evolved Bankai form: Convergence of Worlds: retain emerald swept-back hair and face, white-and-black robes gain natural dark stone and glowing golden-core details, levitating stone fragments and luminous orbiting planetary cores behind him, calm grounded pose. Preserve the exact character identity, facial structure, age, hair color, ethnicity and recognizable facial features from the reference. Do not substitute a different person. High-quality hand-painted anime illustration, precise ink linework, chest-up centered framing, face fully readable in upper center. Distinct transformation rather than simply recoloring the base portrait. One character, square composition, no text, no logo, no border, no watermark.",
+    "asset": "public/portraits/bankai/lane.webp",
+    "mode": "built-in image generation"
+  },
+  {
+    "id": "tomamaru",
+    "type": "bankai",
+    "prompt": "Use case: identity-preserve. Asset type: square Bankai transformation portrait for Ashbound anime tactical card game. Input image is the base-form portrait of tomamaru, edit target and identity reference. Create his clearly evolved Bankai form: Thunder Sovereign: keep black spiky hair and facial beard, white captain coat streaming upward over black robes, intense blue-white lightning wrapping bare hands and shoulders, storm clouds and lightning halo, no sword, no weapon, no hat in hands. Preserve the exact character identity, facial structure, age, hair color, ethnicity and recognizable facial features from the reference. Do not substitute a different person. High-quality hand-painted anime illustration, precise ink linework, chest-up centered framing, face fully readable in upper center. Distinct transformation rather than simply recoloring the base portrait. One character, square composition, no text, no logo, no border, no watermark.",
+    "asset": "public/portraits/bankai/tomamaru.webp",
+    "mode": "built-in image generation"
+  }
+]

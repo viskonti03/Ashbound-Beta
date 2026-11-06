@@ -1,0 +1,423 @@
+/* The world changes; readable combat UI stays outside these filters. */
+.battle-experience .arena-field {
+  background: #0a101b;
+  isolation: isolate;
+}
+.living-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(#08101c44, #08101c88),
+    var(--arena-image) center/cover;
+  filter: saturate(var(--world-saturation, 1));
+  transition: filter 1.8s ease;
+}
+.living-world {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.world-scar {
+  opacity: 0.55;
+}
+.scar-ruin {
+  opacity: 0.85;
+}
+.hell-marks {
+  fill: #100617;
+  stroke: #ab6bb1;
+  stroke-width: 1;
+}
+.world-hell-gate {
+  stroke: #a97ac5;
+  stroke-width: 1.2;
+  fill: none;
+  opacity: 0.3;
+  stroke-dasharray: 8 12;
+}
+.hell-awakened .world-hell-gate {
+  opacity: 0.65;
+  stroke: #d9b3ed;
+}
+.planetary-system {
+  fill: #101a1e;
+  stroke: #c2cb92;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 8px #b6cf8b99);
+}
+.planetary-system path {
+  fill: none;
+  stroke-width: 1.5;
+  stroke-dasharray: 10 18;
+  animation: planet-flow 4s linear infinite;
+}
+.world-eyes {
+  position: absolute;
+  top: 0;
+  left: 21%;
+  right: 21%;
+  height: 28px;
+  display: flex;
+  justify-content: space-around;
+  gap: 7px;
+  z-index: 4;
+  pointer-events: none;
+}
+.world-eyes svg {
+  width: 65px;
+  overflow: visible;
+}
+.world-eyes path {
+  fill: #050710dd;
+  stroke: #e2d8bd;
+  stroke-width: 2;
+}
+.world-eyes ellipse {
+  fill: #eee1ae;
+  filter: drop-shadow(0 0 5px #fff1bb);
+}
+.world-eyes .eye-closed path:not(.eyelid),
+.world-eyes .eye-closed ellipse {
+  opacity: 0;
+}
+.world-eyes .eye-awake .eyelid {
+  opacity: 0;
+}
+.world-eyes .eyelid {
+  fill: none;
+}
+.world-caption {
+  position: absolute;
+  bottom: 2px;
+  left: 15%;
+  right: 15%;
+  text-align: center;
+  z-index: 4;
+  color: #dccfac;
+  font-size: 0.55rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+.character-presence {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  overflow: hidden;
+}
+.character-presence svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  fill: none;
+  stroke: var(--presence-color);
+  stroke-width: 1.1;
+  opacity: 0.65;
+}
+.permanent-aura {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 24px
+    color-mix(in srgb, var(--presence-color) 45%, transparent);
+  border: 1px solid color-mix(in srgb, var(--presence-color) 65%, transparent);
+  animation: aura-breath 5s ease-in-out infinite alternate;
+}
+.dan-shadow {
+  fill: #010309;
+  stroke: none;
+  opacity: 0.3;
+  transform-origin: center bottom;
+  animation: shadow-stir 8s ease-in-out infinite alternate;
+}
+.shadow-1 {
+  animation-direction: alternate-reverse;
+}
+.black-flame-border {
+  fill: #010309;
+  stroke: #b77546;
+  opacity: 0.85;
+}
+.gin-pressure {
+  opacity: var(--reserve-strength);
+}
+.pressure-stream {
+  stroke-dasharray: 3 13;
+  stroke-width: 1.7;
+  animation: pressure-flow 2.5s linear infinite;
+}
+.body-cracks {
+  opacity: 0;
+  stroke: #c0ffed;
+  stroke-width: 1.8;
+}
+.pressure-cracks .body-cracks {
+  opacity: 1;
+  filter: drop-shadow(0 0 3px #79e6c5);
+}
+.space-fold {
+  stroke: #c0faff;
+  opacity: 0.6;
+  stroke-dasharray: 35 9;
+}
+.annihilation-border {
+  stroke: #d4a1ff;
+  stroke-width: 2;
+  filter: drop-shadow(0 0 4px #9b50e1);
+}
+.damned-hands {
+  fill: #160c23;
+  stroke: #c298da;
+  stroke-width: 0.8;
+  opacity: 0.85;
+}
+.earth-roots {
+  stroke: #b6cf91;
+  stroke-width: 2;
+  opacity: 0.45;
+}
+.gathering-presence .earth-roots,
+.awakened-presence .earth-roots {
+  opacity: 1;
+}
+.white-dimensions {
+  stroke: #fffdf3;
+  stroke-width: 1.8;
+  filter: drop-shadow(0 0 3px #fff);
+}
+.thunder-crown {
+  stroke: #baedff;
+  stroke-dasharray: 18 4;
+}
+.erasure-sight {
+  stroke: #fff2d1;
+  opacity: 0.4;
+}
+.signature-cut-in {
+  position: absolute;
+  right: 0;
+  top: 31%;
+  width: min(410px, 65%);
+  height: 100px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(100deg, #080e19f2, #080e19d9);
+  border-block: 1px solid #d3b684;
+  pointer-events: none;
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+  animation: signature-entry 1.25s both;
+}
+.signature-cut-in img {
+  height: 100%;
+  width: 38%;
+  object-fit: cover;
+  object-position: center 28%;
+}
+.signature-cut-in div {
+  flex: 1;
+  padding-right: 12px;
+}
+.signature-cut-in small {
+  display: block;
+  font-size: 0.5rem;
+  letter-spacing: 0.15em;
+  color: #c4b68b;
+}
+.signature-cut-in strong {
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+.defense-reaction {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  animation: reaction-fade 1.05s both;
+}
+.defense-reaction svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #b9dcff;
+  stroke-width: 2;
+}
+.defense-reaction span {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff2cc;
+  text-shadow: 0 1px 5px #000;
+  font-size: 0.65rem;
+  letter-spacing: 0.13em;
+  background: #06111cd9;
+  padding: 5px 1px;
+}
+.defense-reaction img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  animation: ghost-dodge 0.8s both;
+}
+.defense-reaction img:nth-child(2) {
+  animation-direction: reverse;
+}
+.defense-reaction .reaction-shield,
+.defense-reaction .reaction-crack,
+.defense-reaction .reaction-stream {
+  display: none;
+}
+.defense-barrier .reaction-shield,
+.defense-barrier .reaction-crack {
+  display: block;
+}
+.defense-barrier ellipse {
+  display: none;
+}
+.defense-barrier svg {
+  filter: drop-shadow(0 0 4px #adcaff);
+}
+.defense-absorb .reaction-stream {
+  display: block;
+  stroke: #a7f6d9;
+  stroke-dasharray: 6 6;
+}
+.defense-absorb ellipse {
+  stroke: #72e8c3;
+}
+.defense-prison ellipse {
+  fill: #05030be8;
+  stroke: #bd99e2;
+  stroke-width: 4;
+}
+.defense-mantle svg {
+  stroke: #d0a2fb;
+  stroke-width: 5;
+}
+@keyframes aura-breath {
+  from {
+    opacity: 0.45;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes shadow-stir {
+  to {
+    translate: 4px -3px;
+    opacity: 0.5;
+  }
+}
+@keyframes pressure-flow {
+  to {
+    stroke-dashoffset: -64;
+  }
+}
+@keyframes planet-flow {
+  to {
+    stroke-dashoffset: 112;
+  }
+}
+@keyframes signature-entry {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  18%,
+  65% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+}
+@keyframes reaction-fade {
+  0% {
+    opacity: 0;
+  }
+  18%,
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes ghost-dodge {
+  from {
+    transform: translateX(0);
+    opacity: 0.4;
+  }
+  to {
+    transform: translateX(25%);
+    opacity: 0;
+  }
+}
+@media (max-width: 700px) {
+  .signature-cut-in {
+    height: 72px;
+    width: 80%;
+  }
+  .signature-cut-in strong {
+    font-size: 0.75rem;
+  }
+  .world-caption {
+    font-size: 0.43rem;
+  }
+  .world-eyes {
+    height: 20px;
+  }
+}
+[data-effects="off"] .signature-cut-in,
+[data-effects="off"] .defense-reaction {
+  display: none;
+}
+[data-effects="off"] .character-presence *,
+[data-effects="off"] .living-world * {
+  animation: none !important;
+}
+[data-effects="off"] .living-backdrop {
+  transition: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .signature-cut-in,
+  .defense-reaction {
+    display: none;
+  }
+  .character-presence *,
+  .living-world * {
+    animation: none !important;
+  }
+  .living-backdrop {
+    transition: none;
+  }
+}
+
+.living-world,
+.arena-field .arena-atmosphere {
+  filter: saturate(var(--world-saturation, 1));
+}
+/* Character names and combat labels sit above decorative power layers. */
+.battle-experience .portrait-caption { z-index:4; }
+.battle-experience .unit-state,.battle-experience .character-sigil { z-index:4; }
+.battle-experience .sky-eyes,.battle-experience .charge-line { z-index:5; }
+.damned-hands { stroke-linejoin:round; }
+
+.battle-experience .charge-line { bottom: 28px; }

@@ -1,0 +1,56 @@
+/* A near/far camera is presentation only; unit side and target IDs never change. */
+.stage-heart-round,.fighter-reflection{display:none}
+.viewpoint-toggle{background:#101721;color:#ecd1a1;border:1px solid #8e734d;border-radius:4px;padding:5px 9px;font-size:.65rem}
+.stage-battle .fighter-reflection{display:block;position:absolute;top:100%;left:0;width:100%;height:45%;object-fit:fill;object-position:top;transform:scaleY(-1);opacity:.12;filter:blur(1px);mask-image:linear-gradient(transparent 15%,#000 100%);pointer-events:none;animation:none!important;z-index:-2}
+.battle-experience.stage-battle .unit-art>.fighter-reflection{transform:scaleY(-1);object-fit:fill;opacity:.12}
+.stage-battle .unit.fallen .fighter-reflection{opacity:0}
+.stage-battle .unit.fallen .fighter-sprite{filter:grayscale(1)}
+.stage-battle .unit-content{background:linear-gradient(120deg,#03070ff5,#0d131ef2);border-radius:10px 2px}
+.stage-battle .unit-art .character-presence{mask-image:radial-gradient(ellipse at center,#000 20%,transparent 72%);overflow:visible}
+.stage-battle .unit:focus-visible .unit-content{outline:2px solid #f8d995;outline-offset:3px}
+.stage-battle .unit:focus-visible{outline:none}
+@media(min-width:701px){
+ .battle-experience.viewport-battle.stage-battle{grid-template-rows:46px 22px 52px minmax(0,1fr) 20px}
+ .stage-battle .viewport-backdrop{inset:46px 0 175px;background-position:center 42%;background-image:linear-gradient(#03061011,#03061000 75%,#03061033),var(--arena-image)}
+ .stage-battle .initiative{opacity:.85;font-size:.5rem;justify-content:flex-start;padding-left:15px}
+ .stage-battle .initiative-unit img{height:17px;width:17px}.stage-battle .initiative-unit{font-size:.5rem}
+ .stage-battle>.heart-panel{height:52px;grid-template-columns:1fr 240px 1fr;grid-template-rows:1fr;gap:0;padding:4px 10%;background:linear-gradient(90deg,#050a14b8,#100915c9,#050a14b8)}
+ .stage-battle .heart-sides{display:contents}.stage-battle .heart-title{grid-column:2;grid-row:1;justify-content:center;text-align:center;align-self:center}.stage-battle .heart-title>div:last-child{display:block}.stage-battle .heart-title strong{font-size:1.25rem}.stage-battle .heart-title small,.stage-battle .heart-orb{display:none}
+ .stage-battle .stage-heart-round{display:block;font-size:.65rem;color:#ece4d3;margin-top:3px}
+ .stage-battle .heart-near{grid-column:1;grid-row:1}.stage-battle .heart-far{grid-column:3;grid-row:1;justify-self:end;text-align:right}.stage-battle .heart-score{gap:12px;justify-content:center}.stage-battle .heart-score strong{font-size:.75rem}.stage-battle .heart-score b{font-size:.85rem}.stage-battle .heart-side>p{font-size:.47rem;padding:0 2px;opacity:.7}.stage-battle .heart-help{left:8px;bottom:3px}.stage-battle .heart-channel small{display:none}
+ .battle-experience.stage-battle .arena-layout{grid-template-rows:minmax(0,1fr) 175px}
+ .battle-experience.stage-battle .arena-field{overflow:hidden}
+ .battle-experience.stage-battle .team-section.near-team{left:3.5%;bottom:7px;width:47%;height:92%;z-index:3}
+ .battle-experience.stage-battle .team-section.far-team{right:2.5%;top:3px;width:38.5%;height:63%;z-index:2}
+ .battle-experience.stage-battle .near-team .team{gap:14px}
+ .battle-experience.stage-battle .near-team .unit-art{inset:0 -8% 91px}
+ .battle-experience.stage-battle .far-team .unit-art{inset:75px 9% 0}
+ .stage-battle .near-team .unit-content{height:87px}.stage-battle .far-team .unit-content{height:70px}
+ .stage-battle .stage-hud-name{height:30px;font-size:.78rem}.stage-battle .stage-hud-name img{width:48px;height:37px}.stage-battle .health-label{top:35px;font-size:.7rem}.stage-battle .health-track{margin-top:16px;height:6px}.stage-battle .resource-row{margin-top:6px}.stage-battle .far-team .stage-hud-name{font-size:.72rem;height:24px}.stage-battle .far-team .stage-hud-name img{height:27px;width:36px}.stage-battle .far-team .health-label{top:28px;font-size:.63rem}.stage-battle .far-team .health-track{margin-top:14px;height:5px}.stage-battle .far-team .resource-row{margin-top:4px}
+ .stage-battle .near-team .damage-forecast{bottom:92px}.stage-battle .far-team .damage-forecast{top:74px}.stage-battle .near-team .target-label,.stage-battle .near-team .target-restriction,.stage-battle .near-team .attuning-label{bottom:91px}.stage-battle .far-team .target-label,.stage-battle .far-team .target-restriction{top:73px}
+ .stage-battle .clash-strip{top:124px;left:3.5%;width:43%;max-width:43%;background:#05081080;border:0;opacity:.85}.stage-battle .clash-strip small{font-size:.4rem}.stage-battle .clash-strip strong{font-size:.7rem}.stage-battle .action-explanation{font-size:.5rem}
+ .battle-experience.stage-battle .command-column{height:175px}
+ .battle-experience.stage-battle .controls{grid-template-columns:220px minmax(0,1fr) 260px;grid-template-rows:103px 47px;gap:6px 12px;padding:9px 14px}
+ .stage-battle .commander{padding-left:85px;padding-bottom:12px}.stage-battle .commander img{width:150px;opacity:.9}.stage-battle .commander h2{font-size:1.4rem}.stage-battle .commander .eyebrow{font-size:.6rem}
+ .battle-experience.stage-battle .actions{height:103px}.stage-battle .action-wrap>button{height:98px;min-height:98px}.stage-battle .actions strong{font-size:.7rem}.stage-battle .technique-icon{width:27px;height:27px}.stage-battle .ability-readout{height:103px;min-height:103px;max-height:103px;font-size:.68rem}.stage-battle .ability-readout strong{font-size:1rem}
+ .stage-battle .action-wrap:has(.choice-row)>button,.stage-battle .move-switch>button{height:51px;min-height:51px}.battle-experience.stage-battle .actions .choice-row button{height:39px;min-height:39px;max-height:39px}
+ .stage-battle .forecast-slot,.stage-battle .decision-slot{height:47px;min-height:47px}.stage-battle .target-prompt{font-size:.5rem;display:flex;gap:4px;align-items:center}.stage-battle .target-prompt>span{flex:1;max-width:47%}.stage-battle .target-prompt .button-row{flex:1;margin:0;gap:3px}.stage-battle .target-prompt button{font-size:.48rem;min-height:26px;padding:3px 5px}.stage-battle .area-forecast{font-size:.55rem}
+}
+@media(min-width:701px) and (max-width:1100px){.battle-experience.stage-battle .controls{grid-template-columns:140px minmax(0,1fr) 200px}.stage-battle .commander{padding-left:45px}.stage-battle .commander h2{font-size:1rem}.stage-battle .near-team .team{gap:8px}.stage-battle .stage-hud-name{font-size:.68rem}.stage-battle .stage-hud-name img{width:32px;height:30px}.stage-battle>.heart-panel{padding:4px 6%;grid-template-columns:1fr 180px 1fr}}
+@media(max-width:700px){.stage-battle .viewpoint-toggle{font-size:.45rem;padding:4px}.stage-battle .battle-title{gap:3px}.stage-battle .stage-wordmark{font-size:.95rem}.stage-battle .unit-art>.fighter-reflection{opacity:.08}.stage-battle .near-team .fighter-sprite{object-position:center bottom}.stage-battle .stage-heart-round{display:none}}
+@media(max-height:560px) and (min-width:701px){.battle-experience.stage-battle .arena-layout{grid-template-rows:minmax(260px,1fr) 175px}.battle-experience.stage-battle .command-column{min-height:175px}}
+@media(prefers-reduced-motion:reduce){.stage-battle .fighter-reflection{display:none}}
+
+/* Scale bodies by stage height, not canvas width. Wider cloaks and Bankai
+   auras may extend beyond a slot without shrinking the character. Keep
+   translation separate from transform so breathing/defeat motion still works. */
+.battle-experience.stage-battle .unit-art{container-type:size}
+.battle-experience.stage-battle .unit-art>img.fighter-sprite{
+ position:absolute;left:50%;bottom:0;width:auto;max-width:none;aspect-ratio:auto;height:min(100cqh,145cqw);
+ object-fit:contain;object-position:center bottom;translate:-50% 0;
+}
+.battle-experience.stage-battle .unit-art>img.fighter-reflection{
+ left:50%;top:100%;width:auto;max-width:none;aspect-ratio:auto;height:min(100cqh,145cqw);
+ object-fit:contain;object-position:center bottom;translate:-50% 0;
+ transform:translateY(45%) scaleY(-.45);transform-origin:center top;
+}

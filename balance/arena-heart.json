@@ -1,0 +1,110 @@
+{
+  "seed": 13032026,
+  "games": 120,
+  "rules": "arena-heart",
+  "heartWins": 8,
+  "eliminationWins": 112,
+  "arenas": [
+    "living-world",
+    "soul-society",
+    "las-noches"
+  ],
+  "draws": 0,
+  "capped": 0,
+  "meanRounds": 11.04,
+  "meanActions": 49.35,
+  "freeSwitches": 122,
+  "method": "60 seeded roster pairs, both seat orders; existing practice AI on both teams. Exploratory smoke test, not human win-rate evidence.",
+  "roster": {
+    "dan": {
+      "games": 78,
+      "wins": 43,
+      "bankai": 42,
+      "eyes5": 0,
+      "damage": 14407,
+      "winRate": 55.1,
+      "meanDamage": 185
+    },
+    "afrodi": {
+      "games": 68,
+      "wins": 40,
+      "bankai": 25,
+      "eyes5": 0,
+      "damage": 6566,
+      "winRate": 58.8,
+      "meanDamage": 97
+    },
+    "blade": {
+      "games": 80,
+      "wins": 34,
+      "bankai": 32,
+      "eyes5": 0,
+      "damage": 11908,
+      "winRate": 42.5,
+      "meanDamage": 149
+    },
+    "drake": {
+      "games": 48,
+      "wins": 27,
+      "bankai": 27,
+      "eyes5": 0,
+      "damage": 11977,
+      "winRate": 56.3,
+      "meanDamage": 250
+    },
+    "gin": {
+      "games": 76,
+      "wins": 25,
+      "bankai": 44,
+      "eyes5": 0,
+      "damage": 12597,
+      "winRate": 32.9,
+      "meanDamage": 166
+    },
+    "hanibal": {
+      "games": 78,
+      "wins": 50,
+      "bankai": 0,
+      "eyes5": 78,
+      "damage": 20340,
+      "winRate": 64.1,
+      "meanDamage": 261
+    },
+    "kami": {
+      "games": 64,
+      "wins": 30,
+      "bankai": 33,
+      "eyes5": 0,
+      "damage": 10557,
+      "winRate": 46.9,
+      "meanDamage": 165
+    },
+    "kidou": {
+      "games": 78,
+      "wins": 46,
+      "bankai": 17,
+      "eyes5": 2,
+      "damage": 9197,
+      "winRate": 59,
+      "meanDamage": 118
+    },
+    "lane": {
+      "games": 76,
+      "wins": 29,
+      "bankai": 50,
+      "eyes5": 0,
+      "damage": 13746,
+      "winRate": 38.2,
+      "meanDamage": 181
+    },
+    "tomamaru": {
+      "games": 74,
+      "wins": 36,
+      "bankai": 29,
+      "eyes5": 0,
+      "damage": 12175,
+      "winRate": 48.6,
+      "meanDamage": 165
+    }
+  }
+}
